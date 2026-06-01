@@ -91,6 +91,7 @@ export default function TilApp() {
 
   function handleDelete() {
     if (!selectedEntry) return;
+    if (!window.confirm(`Delete "${selectedEntry.title}"? This cannot be undone.`)) return;
     deleteEntry(selectedEntry.id);
     refreshEntries();
     setSelectedSlug(null);

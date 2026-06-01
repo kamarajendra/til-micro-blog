@@ -122,6 +122,11 @@ export default function TilApp() {
             TIL
           </h1>
           <p className="text-xs text-stone-500">Today I Learned</p>
+          <div className="mt-2 flex gap-2 text-[11px] text-stone-400">
+            <span>{entries.length} entries</span>
+            <span>&middot;</span>
+            <span>{allTags.length} tags</span>
+          </div>
         </div>
 
         <div className="border-b border-stone-200 p-3">

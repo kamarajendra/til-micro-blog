@@ -1,6 +1,30 @@
 # TIL — Today I Learned
 
-A personal micro-blog for capturing things learned, built with Next.js.
+[![CI](https://github.com/kamarajendra/til-micro-blog/actions/workflows/ci.yml/badge.svg)](https://github.com/kamarajendra/til-micro-blog/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/kamarajendra/til-micro-blog)](https://github.com/kamarajendra/til-micro-blog/releases)
+[![License](https://img.shields.io/github/license/kamarajendra/til-micro-blog)](https://github.com/kamarajendra/til-micro-blog/blob/main/LICENSE)
+
+A local-first Markdown-based micro-blog for capturing and organizing things you learn every day. All data stays in your browser.
+
+## Screenshot
+
+![TIL Micro-blog](public/screenshots/til-blog-dashboard.png)
+
+## Features
+
+- Create, edit, and delete TIL entries
+- Tag-based organization and filtering
+- Full-text search across titles and content
+- Markdown rendering for rich entries
+- 100% client-side with localStorage persistence
+
+## Tech Stack
+
+- Next.js 16 App Router
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Vitest
 
 ## Getting Started
 
@@ -9,22 +33,6 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+## License
 
-## Scripts
-
-| Script | Description |
-|--------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Build for production |
-| `npm run start` | Start production server |
-| `npm run lint` | Run ESLint |
-| `npm run typecheck` | Run TypeScript type checking |
-| `npm run test` | Run tests with Vitest |
-
-## Tech Stack
-
-- [Next.js](https://nextjs.org/) — React framework
-- [Tailwind CSS](https://tailwindcss.com/) — Utility-first styling
-- [Vitest](https://vitest.dev/) — Unit testing
-- [react-markdown](https://github.com/remarkjs/react-markdown) — Markdown rendering
+MIT
